@@ -1,0 +1,90 @@
+<block-explorer-header></block-explorer-header>
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <block-explorer-widget [data]="config.teaserConfig.currentPrice"></block-explorer-widget>
+    </div> 
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <block-explorer-widget [data]="config.teaserConfig.totalStaking"></block-explorer-widget>
+    </div> 
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <block-explorer-widget [data]="config.teaserConfig.maxSuppply"></block-explorer-widget>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <block-explorer-widget [data]="config.teaserConfig.marketCup"></block-explorer-widget>
+    </div> 
+</div>
+
+  <div class="p-3 mb-4 bg-light rounded-3 shadow-sm">
+    <div class="container-fluid py-2">
+        <label class="display-6 mb-3"><span class="btc2_color">BTC2</span> Explorer</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="blocks, address, transactions" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="row align-items-md-stretch shadow-sm mb-5">
+    <div class="col-md-6 mb-5">
+        <h2 class="display-7 px-3 bd-callout bd-callout-info py-2">Latest Block</h2>
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">16111042</h5>
+                    <small>Mined: 3 secs ago</small>
+                </div>
+                <p class="mb-1 text-truncate">Lorem ipsum</p>
+                <small>size: 1,308,506 bytes</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">16214042</h5>
+                    <small>Mined: 4 secs ago</small>
+                </div>
+                <p class="mb-1 text-truncate">Lorem ipsum</p>
+                <small>size: 1,409,289 bytes</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">17111942</h5>
+                    <small>Mined: 30 secs ago</small>
+                </div>
+                <p class="mb-1 text-truncate">Lorem ipsum</p>
+                <small>size: 1,383,942 bytes</small>
+            </a>
+        </div>
+        <button type="button" class="btn btn-outline-warning float-end my-3">View All Blocks</button>
+    </div>
+    <div class="col-md-6 mb-5">
+        <h2 class="display-7 px-3 bd-callout bd-callout-info py-2">Latest Transactions</h2>
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">$12,645.01</h5>
+                    <small>Time: 15:24</small>
+                </div>
+                <p class="mb-1 text-truncate">7ff0a2ece8f3f692677a0727815e6a9eda3f81cfba45f3186a7d7dd118b45a0c</p>
+                <small>0.74638660 <span class="btc2_color">BTC2</span></small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">$540.06</h5>
+                    <small>Time: 15:24</small>
+                </div>
+                <p class="mb-1 text-truncate">7ff0a2ece8f3f692677a0727815e6a9eda3f81cfba45f3186a7d7dd118b45a0c</p>
+                <small>0.29908555 <span class="btc2_color">BTC2</span></small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 display-8 btc2_color">$1,328.58</h5>
+                    <small>Time: 15:24</small>
+                </div>
+                <p class="mb-1 text-truncate">7ff0a2ece8f3f692677a0727815e6a9eda3f81cfba45f3186a7d7dd118b45a0c</p>
+                <small>0.07842083 <span class="btc2_color">BTC2</span></small>
+            </a>
+        </div>
+        <button type="button" class="btn btn-outline-warning float-end my-3">View All Transactions</button>
+    </div>
+  </div>
+
+<block-explorer-footer></block-explorer-footer>
